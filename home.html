@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karnataka Recipe Book</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <!-- Home Page Section -->
+  <div id="home-page">
+    <header>
+      <h1>Karnataka Cuisine Recipe Book</h1>
+      <p>Explore 10 delicious recipes from Karnataka!</p>
+    </header>
+    
+    <main id="recipe-list">
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\mysore_masala_dosa.jpg"
+         alt="Mysore Masala Dosa">
+        <h3>Mysore Masala Dosa</h3>
+        <button onclick="viewRecipe('mysore-masala-dosa')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\neer_dosa.webp"
+        alt="Neer Dosa">
+        <h3>Neer Dosa</h3>
+        <button onclick="viewRecipe('neer-dosa')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\manglore_bun.jpeg"
+         alt="Mangalore Buns">
+        <h3>Mangalore Buns</h3>
+        <button onclick="viewRecipe('mangalore-buns')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\bisi_bele_bhat.jpeg"
+         alt="Bisi Bele Bath">
+        <h3>Bisi Bele Bath</h3>
+        <button onclick="viewRecipe('bisi-bele-bath')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\maddur_vada.jpg"
+         alt="Maddur Vada">
+        <h3>Maddur Vada</h3>
+        <button onclick="viewRecipe('maddur-vada')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\ragi_mudde.jpg"
+         alt="Raagi Mudde">
+        <h3>Raagi Mudde</h3>
+        <button onclick="viewRecipe('raagi-mudde')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\rava_idli.jpg"
+         alt="Rava Idli">
+        <h3>Rava Idli</h3>
+        <button onclick="viewRecipe('rava-idli')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\udapi_sambar.jpeg"
+         alt="Udupi Sambar">
+        <h3>Udupi Sambar</h3>
+        <button onclick="viewRecipe('udupi-sambar')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\chitranna.jpeg"
+         alt="Chitranna">
+        <h3>Chitranna</h3>
+        <button onclick="viewRecipe('chitranna')">View Recipe</button>
+      </div>
+      <div class="recipe-card">
+        <img src="C:\Users\Deekshay\OneDrive\图片\Saved Pictures\obbattu.jpg"
+         alt="Obbattu">
+        <h3>Obbattu</h3>
+        <button onclick="viewRecipe('obbattu')">View Recipe</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;  Karnataka Cuisine</p>
+    </footer>
+  </div>
+
+  <!-- Recipe Detail Page Section -->
+  <div id="recipe-detail-page" style="display: none;">
+    <header>
+      <h1 id="recipe-name">Recipe Name</h1>
+      <p id="recipe-description">A delicious recipe from Karnataka.</p>
+    </header>
+
+    <main>
+      <img id="recipe-image" src=""  style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 1rem;">
+      
+      <section>
+        <h2>Ingredients</h2>
+        <ul id="recipe-ingredients"></ul>
+      </section>
+      <section>
+        <h2>How to Make</h2>
+        <p id="recipe-method"></p>
+      </section>
+    </main>
+
+    <footer>
+      <button onclick="goBack()">Back to Home</button>
+      <p>&copy; Karnataka Cuisine</p>
+    </footer>
+  </div>
+
+  <script src="home.js"></script>
+  </script>
+</body>
+</html>
