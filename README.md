@@ -1,3 +1,4 @@
 # Deekshay
-Karnataka cuisine explorer: Digital recipe book/n
+Karnataka cuisine explorer: Digital recipe book 
+
 This my first web project
